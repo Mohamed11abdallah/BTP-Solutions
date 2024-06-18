@@ -668,10 +668,16 @@ textarea{
         width: 100px;
     }
     .maps{
-        margin-left: 11px;
+        margin-left: 55px;
         margin-top: 220px;
     }
-
+    .maps .location{
+        height: 580px;
+        width: 415px;
+        margin-top: 55px;
+        
+    }
+    
     /* footer */
     #footer h3{
         font-size: 15px;
