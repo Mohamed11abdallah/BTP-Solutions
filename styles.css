@@ -407,7 +407,7 @@ textarea{
         justify-content: center;
         position: relative;
         cursor: pointer;
-        bottom: 45px;
+        bottom: 60px;
         left: 85%;
     }
     .toggle_menu::before {
