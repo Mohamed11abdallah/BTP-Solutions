@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+            <img src="images/logo.png" alt="BTS Solutions">
+            <nav class="nav">
+                <ul class="menu" >
+                    <li><a href="#hero" class="border-link-acceuil">Acceuil</a></li>
+                    <li><a href="#services" class="border-link">Services</a></li>
+                    <li><a href="#a-propos" class="border-link">À propos</a></li>
+                    <li><a href="#contactez-nous" class="border-link">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <!-- toggle -->
+    <div class="toggle_menu"></div>
+
+    <!-- section hero -->
+    
+    <section id="hero">
+        <div class="section-une">
+            <div class="back-titre"><h1>Construisons ensemble des infrastructures durables avec BTS Solutions</h1>
+                <p>Expertise, qualité et innovation au service de vos projets</p></div>
+            <a href="#contact" class="btn">Contactez-nous</a>
+        </div>
+    </section>
+
+    <!-- Section Services -->
+
+    <section id="services">
+        <div class="container">
+            <h2>Nos Services</h2>
+            <!-- <div class="horizontal-line"></div> -->
+            <div class="blocs">
+                <div class="bloc">
+                    <img src="images/service-2.webp" alt="jeanette">
+                        <h4>Construction de bâtiments</h4>
+                        <p>Des constructions robustes et esthétiques pour tous vos besoins résidentiels, commerciaux et industriels.</p>
+                </div>
+                <div class="bloc">
+                    <img src="images/service-3.webp" alt="david">
+                    <h4>Travaux publics</h4>
+                    <p>Des infrastructures publiques fiables et durables, incluant routes, ponts et aménagements urbains.</p>
+                </div>
+                <div class="bloc">
+                    <img src="images/service-1.webp" alt="jenelia">
+                    <h4>Rénovation et réhabilitation</h4>
+                    <p>Redonnez vie à vos bâtiments avec nos solutions de rénovation complètes et innovantes.</p>
+                </div>
+            </div>
+    </section>
+
+    <!-- Section  À propos de nous -->
+    
+    <section id="a-propos">
+        <div class="container">
+            <h2>À propos de nous</h2>
+
+            <div class="nous">
+                <div class="left-paragraphe">
+                    <p>BTP Solutions est une entreprise de Bâtiment et Travaux Publics dédiée à la réalisation de projets d'infrastructures de haute qualité. Avec une équipe d'experts passionnés et expérimentés, nous nous engageons à fournir des solutions innovantes et durables pour répondre aux besoins de nos clients.</p>
+                </div>
+                <div class="right-photo">
+                    <img src="images/heros.png" alt="Heros">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Témoignages -->
+
+    <section id="temoignage">
+        <div class="container">
+            <h1>Ce que disent nos clients</h1>
+            <div class="clients">
+                <div class="testimonial">
+                    <img src="images/client-1.jpg" alt="beautiful">
+                    <h3>Client 1</h3>
+                    <p>Grâce à BTS Solutions, notre nouveau siège social est un véritable succès. Leur professionnalisme et leur souci du détail ont été remarquables.</p>
+                </div>
+                <div class="testimonial">
+                    <img src="images/client-2.jpg" alt="man">
+                    <h3>Client 2</h3>
+                    <p>Les travaux de rénovation de notre école ont été réalisés avec une grande précision et dans les délais impartis. Merci à toute l'équipe de BTS Solutions.</p>
+                    
+                </div>
+                <div class="testimonial">
+                    <img src="images/medium-shot-female-nurse-outdoors.jpg" alt="medium">
+                    <h3>Client 3</h3>
+                    <p>La nouvelle route construite par BTS Solutions a considérablement amélioré la circulation dans notre commune. Une entreprise que je recommande vivement.</p>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+
+<section id="contactez-nous">
+        <h1>Contactez-nous</h1>
+        <div class="formulaire-maps">
+            <div class="formu">
+                <div class="adresse-icons">
+                    <div class="service-email">
+                        <img src="images/mail.svg" alt="email">
+                        <p>Adresse email:</p>
+                        <p>contact@btpsolutions.com</p>
+                    </div>
+                    <div class="service-call">
+                        <img src="images/call.svg" alt="phone">
+                        <p>Numéro de téléphone :</p>
+                        <p>+123 456 7890</p>
+                    </div>
+                </div>
+                <form class="send_message.php" method="POST">
+                    <div class="class-form">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" placeholder="Nom" required></div>
+                    <div class="class-form">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="class-form-message">
+                        <label for="message">Message</label>
+                        <textarea name="" placeholder="Message"></textarea>
+                    </div>
+                </form>
+                <button class="envoyer" type="submit">Envoyer</button>
+            </div>
+            <div class="maps">
+                <iframe class="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6743736.443121055!2d-3.5383738277233685!3d46.052346818431424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54a02933785731%3A0x6bfd3f96c747d9f7!2sFrance!5e0!3m2!1sfr!2s!4v1718456992736!5m2!1sfr!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+</section>
+
+<!-- section footer -->
+
+<section id="footer">
+    <div class="foot">
+        <div class="copyright">
+            <h3>Copyright © 2005-2024 BTS Solutions</h3>
+        </div>
+        <div class="sociaux">
+            <div class="all">
+                <div class="link">
+                    <img src="images/bxl-linkedin-square.svg" alt="link">
+                    <h3>LinkedIn</h3>
+                </div>
+                <div class="twitter">
+                    <img src="images/twitter-fill.svg" alt="twitter">
+                    <h3>Twitter</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
