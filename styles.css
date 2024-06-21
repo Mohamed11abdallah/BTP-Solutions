@@ -113,7 +113,7 @@
         height: 300px;
         margin-top: 30px;
         width: 400px;
-        
+        padding-right: 120px;
     }
 
     /* nos service */
@@ -388,16 +388,24 @@ nav ul li a {
 #temoignage .clients{
     display: flex;
     justify-content: space-between;
-    margin-left: 80px;
+    margin-left: 60px;
     margin-right: 80px;
 }
 .testimonial{
     margin-top: 50px;
 }
+.images-temoi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial .images-temoi img{
+    height: 140px;
+}
 .testimonial img{
-    height: 200px;
+    
     border-radius: 50%;
-    margin-left: 60px;
+    /* margin-left: 60px; */
     margin-top: -50px;
 }
 .testimonial h3{
@@ -438,7 +446,7 @@ nav ul li a {
 }
 .formulaire-maps{
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
 }
 .adresse-icons{
     display: flex;
@@ -534,7 +542,6 @@ textarea{
 .maps {
     display: flex;
     justify-content: center;
-    
 }
 
 
@@ -784,6 +791,13 @@ textarea{
         /* margin-left: 15%;
         margin-right: 15%; */
     }
+
+    .testimonial img{
+        height: 150px;
+        border-radius: 50%;
+        /* margin-left: 60px; */
+        margin-top: -50px;
+    }
     /* contactez-nous */
 
     #contactez-nous {
@@ -975,7 +989,7 @@ textarea{
     }
     .section-une h1{
         margin-top: 10px;
-        font-size: 51px;
+        /* font-size: 35px; */
         width: 90%;
         color: #ffffff;
     }
