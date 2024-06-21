@@ -667,17 +667,17 @@ textarea{
     }
     .section-une h1{
         margin-top: 10px;
-        font-size: 45px;
+        font-size: 30px;
         width: 95%;
         color: #ffffff;
     }
     .section-une p{
-        font-size: 18px;
+        font-size: 15px;
         width: 85%;
         color: #ffffff;
     }
     .section-une .back-titre{
-        width: 85%;
+        width: 80%;
         margin-left: 5%;
         padding: 10px;
         background-color: rgba(56, 88, 108, 0.8);
