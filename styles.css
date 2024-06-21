@@ -1,7 +1,179 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-* {
+/* responsive desktop */
+
+@media (min-width:1198px){
+    #contactez-nous {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: auto;
+        background-color: #38586C;
+        height: 750px;
+        padding: 1px;
+    }
+    #contactez-nous h1{
+        font-size: 51px;
+        text-align: center;
+        color: #ffffff;
+    }
+    .formulaire-maps{
+        display: flex;
+        /* justify-content: space-between; */
+    }
+    .adresse-icons{
+        display: flex;
+        justify-content: space-between;
+        color: #ffffff;
+        width: 500px;
+        margin-left: 80px;
+    }
+    .adresse-icons img{
+        width: 50px;
+    }
     
+    .service-email, .service-call {
+        text-align: center;
+        padding: 25px;
+        background-color: #0C2C43;
+        /* font-size: 17px; */
+        border-radius: 8px;
+        width: 180px;
+    }
+    .formu{
+        margin-top: 30px;
+        width: 650px;
+        height: 630px;
+    }
+    .class-form label{
+        font-size: 25px;
+        color: #ffffff;
+        padding-left: 10px;
+    }
+    
+    input{
+        height: 35px;
+        border: 1px solid #ffffff;
+        border-radius: 8px;
+        padding-left: 10px;
+        width: 600px;
+        margin-top: 8px;
+    }
+    textarea{
+        resize: none;
+        height: 35px;
+        border: 1px solid #ffffff;
+        padding-left: 10px;
+        width: 600px;
+        border-radius: 8px;
+    }
+    .class-form{
+    display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        /* background-color: #91ea25; */
+        line-height: 20px;
+        
+    }
+    .class-form-message{
+        /* background-color: #516eff; */
+        display: flex;
+        flex-direction: column;
+        grid-column: 1/3;
+        grid-row: 3/5;
+        border-radius: 8px;
+        margin-top: 20px;
+        
+    }
+    .class-form-message label{
+        font-size: 25px;
+        padding-left: 10px;
+        color: #ffffff;
+    }
+    .envoyer{
+        background: #0C2C43;
+        color: #ffffff;
+        height: 45px;
+        width: 615px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+        margin-top: 50px;
+    }
+    .envoyer:hover {
+        background: #ffffff;
+        color: #0C2C43;
+    }
+    .send_message{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        padding-left: 80px;
+    }
+    .maps .location{
+        height: 300px;
+        margin-top: 30px;
+        width: 400px;
+        
+    }
+
+    /* nos service */
+    
+    #services{
+        margin-left: 5%;
+        margin-right: 5%;
+        width: auto;
+    }
+    #services h2{
+        margin-top: 50px;
+    }
+    .blocs{
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        margin-top: 80px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .blocs .bloc{
+        background-color: rgb(255, 255, 255);
+        filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.5));
+        height: 380px;
+        width: 300px;
+        border-radius: 10px;
+    }
+    .bloc img{
+        height: 160px;
+        border-radius: 50%;
+    }
+    .img-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .blocs .bloc h4 {
+        text-align: center;
+        font-size: 22px;
+        margin-top: 15px;
+        color: #18181B;
+    }
+    .blocs .bloc p{
+        text-align: left;
+        font-size: 22px;
+        margin-top: 10px;
+        width: 300px;
+        padding-left: 15px;
+    }
+    
+    /* temoignage */
+    .clients .testimonial{
+        margin-left: 20px;
+    }
+    .clients{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
@@ -19,7 +191,6 @@
         align-items: center;
         justify-content: space-between;
         height: 60px;
-        /* padding: 0 4%; */
         padding: 10px 0;
         margin-left: 5%;
         margin-right: 5%;
@@ -95,8 +266,8 @@ nav ul li a {
 }
 .btn {
     display: inline-block;
-    background: #0C2C43;
-    color: #D9E5C4;
+    background: #ffffff;
+    color: #0C2C43;
     padding: 15px 20px;
     text-decoration: none;
     border-radius: 10px;
@@ -107,8 +278,8 @@ nav ul li a {
 }
 
 .btn:hover {
-    background: #D9E5C4;
-    color: #0C2C43;
+    background: #0C2C43;
+    color: #ffffff;
 }
 
 /* Section Services */
@@ -118,12 +289,9 @@ nav ul li a {
     margin-right: 5%;
     width: auto;
 }
-
-
 #services h2{
     margin-top: 50px;
 }
-
 .blocs{
     display: flex;
     justify-content: center;
@@ -136,26 +304,31 @@ nav ul li a {
     background-color: rgb(255, 255, 255);
     filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.5));
     height: 380px;
-    width: 300px;
+    /* width: 400px; */
     border-radius: 10px;
 }
 .bloc img{
     height: 160px;
     border-radius: 50%;
-    margin-left: 70px;
 }
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .blocs .bloc h4 {
     text-align: center;
-    font-size: 25px;
+    font-size: 22px;
     margin-top: 15px;
     color: #18181B;
 }
 .blocs .bloc p{
     text-align: left;
-    font-size: 20px;
+    font-size: 22px;
     margin-top: 10px;
     width: 280px;
-    padding-left: 10px;
+    padding-left: 15px;
 }
 
 /* Section  À propos de nous */
@@ -189,7 +362,9 @@ nav ul li a {
     width: 600px;
     text-align: justify;
     margin-left: 55px;
+    margin-right: 55px;
     font-size: 30px;
+
 }
 
 /* temoignage */
@@ -208,8 +383,6 @@ nav ul li a {
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin-left: 35%;
-    margin-right: 35%;
     color: #0C2C43;
 }
 #temoignage .clients{
@@ -224,7 +397,7 @@ nav ul li a {
 .testimonial img{
     height: 200px;
     border-radius: 50%;
-    margin-left: 45px;
+    margin-left: 60px;
     margin-top: -50px;
 }
 .testimonial h3{
@@ -233,7 +406,7 @@ nav ul li a {
 }
 .testimonial p{
     font-size: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .clients .testimonial{
@@ -242,7 +415,7 @@ nav ul li a {
     border-left: 2px solid #0C2C43 ;
     border-right: 2px solid #0C2C43 ;
     height: 320px;
-    width: 300px;
+    width: 320px;
     border-radius: 30px;
     padding: 60px 20px;
 }
@@ -255,7 +428,7 @@ nav ul li a {
     margin-right: 5%;
     width: auto;
     background-color: #38586C;
-    height: 850px;
+    height: 750px;
     padding: 1px;
 }
 #contactez-nous h1{
@@ -265,12 +438,12 @@ nav ul li a {
 }
 .formulaire-maps{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 .adresse-icons{
     display: flex;
     color: #ffffff;
-    margin-left: -25px;
+    /* margin-left: -25px; */
 }
 .adresse-icons img{
     width: 50px;
@@ -280,15 +453,12 @@ nav ul li a {
     text-align: center;
     padding: 25px;
     background-color: #0C2C43;
-    font-size: 17px;
     border-radius: 8px;
-    width: 231px;
-    margin: 25px;
 }
+
 
 .formu{
     margin-top: 30px;
-    margin-left: 80px;
     width: 650px;
     height: 630px;
 }
@@ -303,14 +473,15 @@ input{
     border: 1px solid #ffffff;
     border-radius: 8px;
     padding-left: 10px;
-    width: 600px;
+    width: 490px;
     margin-top: 8px;
 }
 textarea{
     resize: none;
     height: 35px;
+    border: 1px solid #ffffff;
     padding-left: 10px;
-    width: 600px;
+    width: 490px;
     border-radius: 8px;
 }
 .class-form{
@@ -340,7 +511,7 @@ textarea{
     background: #0C2C43;
     color: #ffffff;
     height: 45px;
-    width: 615px;
+    width: 505px;
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s ease;
@@ -350,14 +521,20 @@ textarea{
     background: #ffffff;
     color: #0C2C43;
 }
-.maps{
-    margin-right: 80px;
-    margin-top: 1px;
+.send_message{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
 }
 .maps .location{
-    height: 580px;
-    width: 500px;
-    margin-top: 55px;
+    height: 535px;
+    margin-top: 30px;
+    min-width: 90%;
+}
+.maps {
+    display: flex;
+    justify-content: center;
+    
 }
 
 
@@ -373,36 +550,38 @@ textarea{
 
 .sociaux img{
     height: 25px;
-    margin-top: 15px;
 }
 .foot{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
 }
-.all{
+.sociaux{
     display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
+
 .link, .twitter{
     display: flex;
-    margin-left: 500px;
+    justify-content: center;
+    align-items: center;
+}
+.link{
+    margin-right: 40px;
 }
 
-.twitter{
-    margin-left: 50px;
-}
-
-/* reponsive 1 */
 
 
 
 
 
+/* reponsive mobile*/
 
-
-
-/* reponsive */
-
-@media (max-width:598.4px) {
+@media (max-width:598px) {
     .toggle_menu {
         height: 40px;
         width: 40px;
@@ -482,24 +661,24 @@ textarea{
     .section-une h1{
         margin-top: 10px;
         font-size: 45px;
-        width: 450px;
+        width: 95%;
         color: #ffffff;
     }
     .section-une p{
         font-size: 18px;
-        width: 350px;
+        width: 85%;
         color: #ffffff;
     }
     .section-une .back-titre{
-        width: 450px;
+        width: 85%;
         margin-left: 5%;
         padding: 10px;
         background-color: rgba(56, 88, 108, 0.8);
     }
     .btn {
         display: inline-block;
-        background: #0C2C43;
-        color: #D9E5C4;
+        background: #ffffff;
+        color: #0C2C43;
         padding: 10px 15px;
         text-decoration: none;
         border-radius: 10px;
@@ -507,6 +686,10 @@ textarea{
         margin-left: 25px;
         margin-top: 50px;
         font-size: 18px;
+    }
+    .btn:hover {
+        background: #0C2C43;
+        color: #ffffff;
     }
     /* Section Services */
 
@@ -518,7 +701,7 @@ textarea{
     
     
     #services h2{
-        margin-top: 50px;
+        margin-top: 60px;
     }
     
     .blocs{
@@ -526,22 +709,24 @@ textarea{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-top: 100px;
+        margin-top: 70px;
         
 
     }
     .blocs .bloc{
         background-color: rgb(255, 255, 255);
         filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.5));
-        height: 380px;
-        width: 300px;
+        height: 350px;
+        width: 90%;
         border-radius: 10px;
-        margin: 20px;
+        margin: 5%;
+        padding-right: 12px;
+    
     }
     .bloc img{
         height: 160px;
         border-radius: 50%;
-        margin-left: 70px;
+        /* margin-left: 30%; */
     }
     .blocs .bloc h4 {
         text-align: center;
@@ -553,8 +738,8 @@ textarea{
         text-align: left;
         font-size: 20px;
         margin-top: 10px;
-        width: 280px;
-        padding-left: 10px;
+        width: 95%;
+        padding-left: 5%;
     }
 
     /* Section  À propos de nous */
@@ -589,122 +774,128 @@ textarea{
         text-align: center;
         justify-content: center;
         align-items: center;
-        margin-left: 5%;
-        margin-right: 5%;
         color: #0C2C43;
     }
     #temoignage .clients{
         display: flex;
         flex-direction: column;
-        margin-left: 80px;
-        margin-right: 80px;
+        justify-content: center;
+        align-items: center;
+        /* margin-left: 15%;
+        margin-right: 15%; */
     }
     /* contactez-nous */
 
     #contactez-nous {
         margin-left: 5%;
         margin-right: 5%;
-        width: auto;
+        /* width: auto; */
         background-color: #38586C;
-        height: 1700px;
+        height: 1300px;
         margin-top: 1060px;
     }
     .formu{
-        width: 200px;
+        width: 90%;
+        /* background-color: aqua; */
     }
     .formulaire-maps{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .adresse-icons{
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
     .service-email, .service-call {
         text-align: center;
-        padding: 25px;
+        padding: 25px 0px;
         background-color: #0C2C43;
-        font-size: 17px;
         border-radius: 8px;
         width: 231px;
-        margin-left: 65px;
-        margin-right: 65px;
+    }
+    .service-email{
+        margin-right: 10px;
+    }
+    
+    .service-email p, .service-call p{
+        font-size: 2vw;
     }
     input{
         height: 35px;
         border: 1px solid #ffffff;
         border-radius: 8px;
         padding-left: 10px;
-        width: 400px;
-        margin-top: 8px;
-        margin-left: -25px;
+        width: 96%;
+        margin-top: 20px;
+        /* margin-left: -6%; */
     }
     textarea{
         resize: none;
         height: 35px;
         padding-left: 10px;
-        width: 400px;
+        width: 96%;
+        border: 1px solid #ffffff;
         border-radius: 8px;
-        margin-left: -25px;
+        /* margin-left: -6%; */
     }
     .envoyer{
         background: #0C2C43;
-        color: #D9E5C4;
+        color: #ffffff;
         height: 45px;
-        width: 415px;
+        width: 100%;
         text-decoration: none;
-        border-radius: 5px;
+        border-radius: 8px;
         transition: background 0.3s ease;
-        margin-top: 50px;
-        margin-left: -25px;
+        margin-top: 25px;
+        /* margin-left: -6%; */
     }
+        .send_message{
+            width: 100%;
+        }
     .class-form label{
         font-size: 25px;
         color: #ffffff;
-        margin-left: -25px;
-        width: 100px;
+        width: 100%;
     }
     .class-form-message label{
         font-size: 25px;
-        margin-left: -25px;
         color: #ffffff;
-        width: 100px;
+        width: 100%;
     }
     .maps{
-        margin-left: 55px;
-        margin-top: 220px;
+        /* margin-left: 10%;
+        margin-right: 10%; */
+        margin-top: -80px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
-    .maps .location{
+    /* .maps .location{
         height: 580px;
-        width: 415px;
+        width: 100%;
         margin-top: 55px;
-        
-    }
+    } */
     
     /* footer */
     #footer h3{
-        font-size: 15px;
-    }
-
-    .link, .twitter{
-        display: flex;
-        margin-left: 70px;
+        font-size: 2vw;
     }
     .sociaux img{
         height: 20px;
-        margin-top: 12px;
     }
-    .twitter{
-        margin-left: 20px;
-    }
-
 }
+
+
+
 
 
 /* reponsive tablet*/
 
-@media (min-width:599px) and (max-width:1199.2px){
+@media (min-width:598px) and (max-width:1198px){
 
     .toggle_menu {
         height: 40px;
@@ -715,7 +906,7 @@ textarea{
         position: relative;
         cursor: pointer;
         bottom: 60px;
-        left: 88%;
+        left: 85%;
     }
     .toggle_menu::before {
         position: absolute;
@@ -756,7 +947,7 @@ textarea{
         background-color: #ffffff;
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
         flex-direction: column;
-        margin-right: 98px;
+        margin-right: 40px;
     }
     header .menu.responsive li{
         margin: 15px 0;
@@ -765,7 +956,7 @@ textarea{
         max-width: 200px;
         height: 50px;
         border-radius: 50%;
-        margin-left: 50px;
+        margin-left: 25px;
     }
 
 
@@ -784,32 +975,36 @@ textarea{
     }
     .section-une h1{
         margin-top: 10px;
-        font-size: 50px;
-        width: 600px;
+        font-size: 51px;
+        width: 90%;
         color: #ffffff;
     }
     .section-une p{
-        font-size: 20px;
-        width: 450px;
+        font-size: 18px;
+        width: 75%;
         color: #ffffff;
     }
     .section-une .back-titre{
-        width: 600px;
+        width: 60%;
         margin-left: 5%;
         padding: 10px;
         background-color: rgba(56, 88, 108, 0.8);
     }
     .btn {
         display: inline-block;
-        background: #0C2C43;
-        color: #D9E5C4;
+        background: #ffffff;
+        color: #0C2C43;
         padding: 10px 15px;
         text-decoration: none;
         border-radius: 10px;
         transition: background 0.3s ease;
-        margin-left: 50px;
+        margin-left: 5%;
         margin-top: 50px;
         font-size: 18px;
+    }
+    .btn:hover {
+        background: #0C2C43;
+        color: #ffffff;
     }
     /* Section Services */
 
@@ -821,28 +1016,31 @@ textarea{
     
     
     #services h2{
-        margin-top: 50px;
+        margin-top: 60px;
     }
     
     .blocs{
         display: flex;
         justify-content: center;
-        justify-content: space-between;
-        margin-top: 80px;
-        margin-left: 5%;
-        margin-right: 5%;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 70px;
+        
+
     }
     .blocs .bloc{
         background-color: rgb(255, 255, 255);
         filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.5));
-        height: 380px;
-        width: 300px;
+        height: 350px;
+        width: 500px;
         border-radius: 10px;
-    }
+        margin: 5%;
+        padding-right: 12px;
+}
     .bloc img{
         height: 160px;
         border-radius: 50%;
-        margin-left: 70px;
+        /* margin-left: 30%; */
     }
     .blocs .bloc h4 {
         text-align: center;
@@ -854,8 +1052,8 @@ textarea{
         text-align: left;
         font-size: 20px;
         margin-top: 10px;
-        width: 280px;
-        padding-left: 10px;
+        width: 95%;
+        padding-left: 5%;
     }
 
     /* Section  À propos de nous */
@@ -867,25 +1065,21 @@ textarea{
     background-color: rgb(255, 255, 255);
     filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.5));
     padding: 25px;
-    margin-top: 100px;
+    margin-top: 50px;
     }
     .container .right-photo img{
-        width: 400px;
-        height: 300px;
-        margin-right: 20px;
-        border-radius: 20px;
-        margin-top: -50px;
+        display: none;
     }
     .container .left-paragraphe{
         display: flex;
         text-align: center;
         text-align: justify;
         font-size: 30px;
+        width: 90%;
+        margin-right: 55px;
         /* margin-left: 5%;
         margin-right: 5%; */
         margin-top: -50px;
-        width: 500px;
-        margin-left: 20px;
     }
 
     /* temoignage */
@@ -896,25 +1090,15 @@ textarea{
         text-align: center;
         justify-content: center;
         align-items: center;
-        margin-left: 30%;
-        margin-right: 30%;
         color: #0C2C43;
-        margin-top: 70px;
     }
     #temoignage .clients{
         display: flex;
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-    .clients .testimonial{
-        border-top: 20px solid #0C2C43 ;
-        border-bottom: 20px solid #0C2C43 ;
-        border-left: 2px solid #0C2C43 ;
-        border-right: 2px solid #0C2C43 ;
-        height: 320px;
-        width: 300px;
-        border-radius: 30px;
-        padding: 60px 5px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* margin-left: 15%;
+        margin-right: 15%; */
     }
     /* contactez-nous */
 
@@ -923,132 +1107,118 @@ textarea{
         margin-right: 5%;
         width: auto;
         background-color: #38586C;
-        height: 850px;
-        padding: 1px;
+        height: 1300px;
+        margin-top: 1060px;
     }
-    #contactez-nous h1{
-        font-size: 51px;
-        text-align: center;
-        color: #ffffff;
+    .formu{
+        width: 90%;
     }
     .formulaire-maps{
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .adresse-icons{
         display: flex;
-        color: #ffffff;
-        margin-left: -50px;
-    }
-    .adresse-icons img{
-        width: 50px;
+        justify-content: center;
+        align-items: center;
+        
+
     }
     
     .service-email, .service-call {
         text-align: center;
-        padding: 25px;
+        padding: 25px 0px;
         background-color: #0C2C43;
-        font-size: 17px;
         border-radius: 8px;
-        width: 180px;
-        margin: 10px;
+        width: 231px;
+    }
+    .service-email{
+        margin-right: 20px;
     }
     
-    .formu{
-        margin-top: 30px;
-        margin-left: 80px;
-        width: 650px;
-        height: 630px;
+    .service-email p, .service-call p{
+        font-size: 1.3vw;
     }
-    .class-form label{
-        font-size: 25px;
-        color: #ffffff;
-        margin-left: -40px;
-
-    }
-    
     input{
         height: 35px;
         border: 1px solid #ffffff;
         border-radius: 8px;
         padding-left: 10px;
-        width: 465px;
+        width: 96%;
         margin-top: 8px;
-        margin-left: -40px;
     }
     textarea{
         resize: none;
         height: 35px;
         padding-left: 10px;
+        width: 96%;
+        border: 1px solid #ffffff;
         border-radius: 8px;
-        margin-left: -40px;
-        width: 465px;
-    }
-    .class-form{
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-        /* background-color: #91ea25; */
-        line-height: 20px;
-        
-    }
-    .class-form-message{
-        /* background-color: #516eff; */
-        display: flex;
-        flex-direction: column;
-        grid-column: 1/3;
-        grid-row: 3/5;
-        border-radius: 8px;
-        margin-top: 20px;
-        
-    }
-    .class-form-message label{
-        font-size: 25px;
-        margin-left: -40px;
-        color: #ffffff;
     }
     .envoyer{
         background: #0C2C43;
         color: #ffffff;
         height: 45px;
-        width: 480px;
+        width: 100%;
         text-decoration: none;
-        border-radius: 5px;
+        border-radius: 8px;
         transition: background 0.3s ease;
-        margin-top: 50px;
-        margin-left: -40px;
+        margin-top: 25px;
+        
     }
-    .envoyer:hover {
-        background: #ffffff;
-        color: #0C2C43;
+    .class-form label{
+        font-size: 25px;
+        color: #ffffff;
+        width: 100%;
     }
+    .class-form-message label{
+        font-size: 25px;
+        color: #ffffff;
+        width: 100%;
+    }
+    .send_message{
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: 500px;
+        /* justify-content: center;
+        align-items: center; */
+    }
+    /* .class-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .class-form-message {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
     .maps{
-        margin-right: 40px;
-        margin-top: 1px;
+        /* margin-left: 10%;
+        margin-right: 10%; */
+        margin-top: -80px;
+        /* width: 500px; */
+        /* width: 90%; */
+        display: flex;
+        justify-content: center;
     }
     .maps .location{
-        height: 570px;
-        width: 450px;
-        margin-top: 40px;
+        width: 500px;
     }
-
-    /* footer */
     #footer h3{
-        font-size: 15px;
-    }
-
-    .link, .twitter{
-        display: flex;
-        margin-left: 470px;
+        font-size: 1.3vw;
     }
     .sociaux img{
         height: 20px;
-        margin-top: 12px;
     }
-    .twitter{
-        margin-left: 20px;
-    }
+    
 }
+
+
 
 
 

@@ -40,17 +40,23 @@
             <!-- <div class="horizontal-line"></div> -->
             <div class="blocs">
                 <div class="bloc">
-                    <img src="images/service-2.webp" alt="jeanette">
+                    <div class="img-container">
+                        <img src="images/service-2.webp" alt="jeanette">
+                    </div>
                         <h4>Construction de bâtiments</h4>
                         <p>Des constructions robustes et esthétiques pour tous vos besoins résidentiels, commerciaux et industriels.</p>
                 </div>
                 <div class="bloc">
-                    <img src="images/service-3.webp" alt="david">
+                    <div class="img-container">
+                        <img src="images/service-3.webp" alt="david">
+                    </div>
                     <h4>Travaux publics</h4>
                     <p>Des infrastructures publiques fiables et durables, incluant routes, ponts et aménagements urbains.</p>
                 </div>
                 <div class="bloc">
-                    <img src="images/service-1.webp" alt="jenelia">
+                    <div class="img-container">
+                        <img src="images/service-1.webp" alt="jenelia">
+                    </div>
                     <h4>Rénovation et réhabilitation</h4>
                     <p>Redonnez vie à vos bâtiments avec nos solutions de rénovation complètes et innovantes.</p>
                 </div>
@@ -111,16 +117,16 @@
                 <div class="adresse-icons">
                     <div class="service-email">
                         <img src="images/mail.svg" alt="email">
-                        <p>Adresse email:</p>
+                        <!-- <p>Adresse email:</p> -->
                         <p>contact@btpsolutions.com</p>
                     </div>
                     <div class="service-call">
                         <img src="images/call.svg" alt="phone">
-                        <p>Numéro de téléphone :</p>
+                        <!-- <p>Numéro de téléphone :</p> -->
                         <p>+123 456 7890</p>
                     </div>
                 </div>
-                <form class="send_message.php" method="POST">
+                <form class="send_message" method="POST">
                     <div class="class-form">
                         <label for="name">Nom</label>
                         <input type="text" id="name" name="name" placeholder="Nom" required></div>
@@ -132,11 +138,14 @@
                         <label for="message">Message</label>
                         <textarea name="" placeholder="Message"></textarea>
                     </div>
+                    <div class="class-form">
+                        <button class="envoyer" type="submit">Envoyer</button>
+                </div>
                 </form>
-                <button class="envoyer" type="submit">Envoyer</button>
+                
             </div>
             <div class="maps">
-                <iframe class="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6743736.443121055!2d-3.5383738277233685!3d46.052346818431424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54a02933785731%3A0x6bfd3f96c747d9f7!2sFrance!5e0!3m2!1sfr!2s!4v1718456992736!5m2!1sfr!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6743736.443121055!2d-3.5383738277233685!3d46.052346818431424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54a02933785731%3A0x6bfd3f96c747d9f7!2sFrance!5e0!3m2!1sfr!2s!4v1718456992736!5m2!1sfr!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
 </section>
@@ -149,15 +158,13 @@
             <h3>Copyright © 2005-2024 BTS Solutions</h3>
         </div>
         <div class="sociaux">
-            <div class="all">
-                <div class="link">
-                    <img src="images/bxl-linkedin-square.svg" alt="link">
-                    <h3>LinkedIn</h3>
-                </div>
-                <div class="twitter">
-                    <img src="images/twitter-fill.svg" alt="twitter">
-                    <h3>Twitter</h3>
-                </div>
+            <div class="link">
+                <img src="images/bxl-linkedin-square.svg" alt="link">
+                <h3>LinkedIn</h3>
+            </div>
+            <div class="twitter">
+                <img src="images/twitter-fill.svg" alt="twitter">
+                <h3>Twitter</h3>
             </div>
         </div>
     </div>
