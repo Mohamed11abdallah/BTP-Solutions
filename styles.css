@@ -658,7 +658,7 @@ textarea{
 
     /* hero */
     #hero {
-        background: url('Images/fond.jpg') center/cover no-repeat;
+        background: url('Images/fond.jpeg') center/cover no-repeat;
         color: #fff;
         padding: 20px 0;
         margin-left: 5%;
@@ -980,7 +980,7 @@ textarea{
 
     /* hero */
     #hero {
-        background: url('Images/fond.jpg') center/cover no-repeat;
+        background: url('Images/fond.jpeg') center/cover no-repeat;
         color: #fff;
         padding: 20px 0;
         margin-left: 5%;
@@ -990,16 +990,16 @@ textarea{
     .section-une h1{
         margin-top: 10px;
         /* font-size: 35px; */
-        width: 90%;
+        width: 89%;
         color: #ffffff;
     }
     .section-une p{
         font-size: 18px;
-        width: 75%;
+        width: 70%;
         color: #ffffff;
     }
     .section-une .back-titre{
-        width: 60%;
+        width: 55%;
         margin-left: 5%;
         padding: 10px;
         background-color: rgba(56, 88, 108, 0.8);
