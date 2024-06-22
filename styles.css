@@ -250,7 +250,7 @@ nav ul li a {
 .section-une h1{
     margin-top: 10px;
     font-size: 50px;
-    width: 600px;
+    width: 550px;
     color: #ffffff;
 }
 .section-une p{
@@ -259,7 +259,7 @@ nav ul li a {
     color: #ffffff;
 }
 .section-une .back-titre{
-    width: 600px;
+    width: 500px;
     margin-left: 5%;
     padding: 10px;
     background-color: rgba(56, 88, 108, 0.8);
