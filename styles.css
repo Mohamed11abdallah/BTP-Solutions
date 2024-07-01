@@ -18,7 +18,7 @@
     }
     .formulaire-maps{
         display: flex;
-        /* justify-content: space-between; */
+        
     }
     .adresse-icons{
         display: flex;
@@ -277,7 +277,7 @@ nav ul li a {
     transition: background 0.3s ease;
     margin-left: 70px;
     margin-top: 50px;
-    font-size: 25px;
+    font-size: 24px;
 }
 
 .btn:hover {
