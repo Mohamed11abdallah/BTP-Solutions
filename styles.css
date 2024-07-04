@@ -366,7 +366,7 @@ nav ul li a {
 }
 .container .left-paragraphe{
     width: 600px;
-    text-align: justify;
+    text-align: left;
     margin-left: 55px;
     margin-right: 55px;
     font-size: 30px;
@@ -773,8 +773,7 @@ textarea{
     }
     .container .left-paragraphe{
         display: flex;
-        text-align: center;
-        text-align: justify;
+        text-align: left;
         font-size: 30px;
         margin-left: 5%;
         margin-right: 5%;
@@ -1096,8 +1095,7 @@ textarea{
     }
     .container .left-paragraphe{
         display: flex;
-        text-align: center;
-        text-align: justify;
+        text-align: left;
         font-size: 30px;
         width: 90%;
         margin-right: 55px;
@@ -1175,7 +1173,7 @@ textarea{
     }
     textarea{
         resize: none;
-        height: 35px;
+        height: 70px;
         padding-left: 10px;
         width: 96%;
         border: 1px solid #ffffff;
