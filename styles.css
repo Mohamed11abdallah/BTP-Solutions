@@ -492,7 +492,7 @@ input{
 }
 textarea{
     resize: none;
-    height: 70px;
+    height: 100px;
     border: 1px solid #ffffff;
     padding-left: 10px;
     width: 490px;
@@ -529,7 +529,7 @@ textarea{
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s ease;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 .envoyer:hover {
     background: #ffffff;
@@ -856,7 +856,7 @@ textarea{
     }
     textarea{
         resize: none;
-        height: 70px;
+        height: 100px;
         padding-left: 10px;
         width: 96%;
         border: 1px solid #ffffff;
@@ -871,7 +871,7 @@ textarea{
         text-decoration: none;
         border-radius: 8px;
         transition: background 0.3s ease;
-        margin-top: 20px;
+        margin-top: 5px;
         /* margin-left: -6%; */
     }
         .send_message{
@@ -1173,7 +1173,7 @@ textarea{
     }
     textarea{
         resize: none;
-        height: 70px;
+        height: 100px;
         padding-left: 10px;
         width: 96%;
         border: 1px solid #ffffff;
@@ -1187,7 +1187,7 @@ textarea{
         text-decoration: none;
         border-radius: 8px;
         transition: background 0.3s ease;
-        margin-top: 25px;
+        margin-top: 10px;
         
     }
     .class-form label{
